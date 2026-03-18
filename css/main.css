@@ -47,7 +47,7 @@ img {
   color: var(--main-color);
 }
 
-/* ==================================== start navbar ====================  */
+
 .navbar {
   padding: 34px;
 }
@@ -89,8 +89,7 @@ img {
   width: 40px;
   cursor: pointer;
 }
-/* ==================================== end  navbar ====================  */
-/* ==================================== start hero ====================  */
+
 .hero {
   background: url("../img/hero-img.png");
   height: 100vh;
@@ -149,8 +148,7 @@ img {
   background-color: transparent;
   color: var(--main-color);
 }
-/* ==================================== end hero ====================  */
-/* ==================================== start about ====================  */
+
 .about {
   padding: 120px 0;
 }
@@ -206,8 +204,7 @@ img {
   font-size: 14px;
 }
 
-/* ==================================== end about ====================  */
-/* ==================================== start details ====================  */
+
 .details {
   padding: 100px 0;
   background-color: var(--main-color);
@@ -246,8 +243,7 @@ img {
 .details .items .item img {
   width: 30px;
 }
-/* ==================================== end details ====================  */
-/* ==================================== start cards ====================  */
+
 .cards {
   padding: 100px 0 0;
 }
@@ -272,8 +268,7 @@ img {
   margin: 20px 0;
 }
 
-/* ==================================== end cards ====================  */
-/* ==================================== start brands ====================  */
+
 .barnds {
   padding: 100px 0;
   background-color: #dddddd35;
@@ -292,7 +287,7 @@ img {
 .barnds .items {
   margin-top: 50px;
   display: flex;
-  /* justify-content: space-between; */
+  
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
@@ -311,8 +306,7 @@ img {
   border-radius: 8px;
   margin-bottom: 25px;
 }
-/* ==================================== end brands ====================  */
-/* ==================================== start bize ====================  */
+
 .bize {
   padding: 100px 0;
 }
@@ -335,8 +329,7 @@ img {
   margin-top: 50px;
   display: inline-block;
 }
-/* ==================================== end bize ====================  */
-/* ==================================== start footer ====================  */
+
 .footer {
   padding: 100px 0 50px;
   background-color: var(--main-color);
@@ -381,4 +374,151 @@ img {
   gap: 10px;
   align-items: center;
 }
-/* ==================================== end footer ====================  */
+
+
+
+
+@media (max-width: 1199.98px) {
+  .hero .form {
+    width: 60% ;
+  }
+
+  .barnds .items .item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 991.98px) {
+  
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar .moblie {
+    display: flex;
+  }
+
+
+  .hero h1 {
+  }
+  .hero .form input {
+    padding-left: 10px !important;
+  }
+  .about .items .item {
+    width: calc(100% / 2 - 25px);
+  }
+ 
+  .cards .items .item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .cards .items .cards-content {
+    order: 1;
+  }
+  .cards .main-btn {
+    width: 100%;
+  }
+  .d-none {
+    display: none;
+  }
+  
+}
+
+
+@media (max-width: 767.98px) {
+ 
+  .hero .inner-hero {
+    text-align: center;
+  }
+  .hero .inner-hero h1 {
+    font-size: 40px;
+  }
+  .hero .inner-hero p {
+    font-size: 16px;
+    max-width: 80%;
+    margin: 40px auto;
+  }
+  .hero .form {
+    width: 100%;
+    margin: auto;
+  }
+ 
+
+  .details .items .item {
+    width: calc(50% - 25px);
+    margin-bottom: 30px;
+  }
+
+  .details .header h2 {
+    font-size: 30px;
+  }
+
+
+  .cards .items .item h2 {
+    font-size: 30px;
+  }
+  .cards .items .item p {
+    font-size: 13px;
+  }
+
+
+  .footer .items .item {
+    width: calc(100% / 2 - 25px);
+  }
+}
+
+
+@media (max-width: 575.98px) {
+
+
+  .hero .inner-hero h1 {
+    font-size: 35px;
+  }
+  .hero .inner-hero p {
+    font-size: 12px;
+    margin: 40px auto;
+  }
+  .hero .inner-hero .form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hero .inner-hero .form input {
+    padding: 25px 20px;
+    /* margin-bottom: 120px; */
+  }
+  .hero .form .btn {
+    position: static !important;
+  }
+
+
+  .about .items .item {
+    width: 100%;
+  }
+ 
+
+  .details .items {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .details .items .item {
+    flex-direction: column;
+  }
+  .details .items .item img {
+    transform: rotate(90deg);
+    width: 40px;
+  }
+  .details .items .item {
+    text-align: center;
+  }
+
+  .footer .items .item {
+    width: 100%;
+  }
+}
